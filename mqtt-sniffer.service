@@ -1,0 +1,12 @@
+[Unit]
+Description=MQTT Sniffer Service
+After=network.target
+
+[Service]
+ExecStart=/opt/mqtt_sniffer_env/bin/python /etc/mqttsniffer/mqttsniffer.py
+Restart=always
+User=root
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
