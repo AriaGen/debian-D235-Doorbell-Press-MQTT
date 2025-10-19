@@ -26,3 +26,9 @@ sudo systemctl status mqtt-sniffer<br>
 sudo journalctl -u mqtt-sniffer -f<br>
 <br>
 //Home assistant, create sensor:<br>
+mqtt:<br>
+  sensor:<br>
+    - name: "Tapo Doorbell Press"<br>
+      state_topic: "doorbell/press"<br>
+      qos: 0<br>
+      value_template: "{{ value }}"
