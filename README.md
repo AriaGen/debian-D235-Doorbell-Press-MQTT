@@ -4,7 +4,7 @@ sudo apt update<br>
 sudo apt install mosquitto-clients python3 python3-pip<br>
 sudo apt install python3.11-venv<br>
 python3 -m venv /opt/mqtt_listener_env<br>
-source /opt/mqtt_listener_env/bin/activate<br>
+source /opt/mqtt_sniffer_env/bin/activate<br>
 pip install "paho-mqtt<2.0"<br>
 <br>
 //create and install python script<br>
